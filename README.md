@@ -120,10 +120,22 @@ Next, we need to make sure that we `commit` all of our changes we made! In your 
 git commit -a -m "Submission commit of HW0."
 ```
 
-Now that we have committed our changes, we need to `push` them to `GitHub` so that `GradeScope` can upload them. Your Openlab repository should have two remotes: `origin` which represents the public GitHub repository at `RayKlefstad/ICS45c` and `my_repo` which represents your own private GitHub repository for your own code. To push to *your* GitHub repository, use the command:
+Now that we have committed out changes, we need to push them to `GitHub` so that `Gradescope` can see them.
+:warning: **NOTE: If you followed the instructions under the main branch and still have two remotes (as opposed
+to deleting this folder and then recloning), you will need to specify which branch to push to, or set up
+which remote you wish to track.**
 
 ```bash
-git push -u my_repo
+# If you only have 1 upstream remote:
+git push
+
+# If your personal repository was named similar to main instructions:
+git push my_repo
+
+# To push and set remote to personal repo for all future pushes:
+# (After using this once, you can use git push for all future
+# pushes on branch hw0).
+git push -u my_repo hw0
 ```
 
 This command will set the default remote for this branch to `my_repo`. If you make any future changes and want to resubmit them, you can create another `commit` with `git commit -a -m "Fixed bug XZY"` followed by `git push`.
