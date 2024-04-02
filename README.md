@@ -1,79 +1,51 @@
-# ICS 46: Homework 0
+# ICS 46 Homework 0.2
 
-Welcome to ICS 46 Homework 0! For more general instructions, please reference the `main` branch.
-This repository will focus on instructions relevant to HW0. In this assignment, you will be modifying:
+Welcome to ICS 45C Homework 0.2! In this assignment, you will be modifying and submitting
 
 ```bash
 main.cpp
 ```
+by following all the steps below. 
 
 ## Getting Started
 
-If you are using `GitHub`, then getting started is easy! You will clone this repository, then
-checkout the `hw0` branch! If you have already `cloned` this project, then you can skip to
-the [Checkout](#checkout) instructions. If you plan to not use `GitHub` and still want to use
-our provided tests, follow the instructions under [Directory Structure](#directory-structure).
-If you want to manually make the individual files and not use our tests, then you can simply
-make a `main.cpp` file and skip ahead to the [Coding](#coding) section.
+To get started with this Homework 0.2, be sure that you have followed all of the instructions in the `main` branch README, and have cloned the public course repository to your own private one on Openlab (and pushed to your own private GitHub repository).
 
-### Clone
-
-On `Linux` and `Mac`, you can open a new terminal. On Windows you will open `Git BASH` which
-should have been installed following the instructions under the `main` branch. On OpenLab,
-you are already in a terminal! Next, you will want to copy the repository link as shown in
-the image below:
-
-![](docs/clone_link.png)
-
-And then in the terminal, type:
+Now, log in to Openlab, and move into the directory you created for this course:
 
 ```bash
-git clone <LinkCopiedAbove>  # For example: git clone git@github.com:klefstad/CS46-Template.git 
-```
+# Move into the course directory, i.e., your ICS46 directory on Openlab
+cd ICS46
 
-There should now be a folder named `CS46-Template`. We will move into that directory using the
-command:
-
-```bash
-cd CS46-Template
-```
-
-Once inside the directory, we will `checkout` the `hw0` branch!
-
-### Checkout
-
-In the same terminal as before, you will type:
-
-```bash
+# Change to the current homework branch:
 git checkout hw0
 ```
 
-You are now in the `hw0` branch! You can now make changes to your code as shown in the [Coding](#coding)
-section below!
-
 ## Directory Structure
 
-If you are not using `GitHub`, and want to use our testing framework, you will need to make a folder
-named `hw0` with the following structure:
+Our testing framework has the following structure in `hw0`:
 
 ```bash
 ├── CMakeLists.txt
 ├── CMakePresets.txt
 ├── gtest
-│   ├── gtestmain.cpp
-│   └── hw_gtests.cpp
+│   ├── gtestmain.cpp
+│   └── hw_gtests.cpp
 └── src
     └── main.cpp
 ```
+Note that the files with your code are in the subdirectory `src`, and the files with your tests are in the subdirectory `gtest`. To edit the files, you **must specify their path**, e.g. 
+```
+vim src/main.cpp
+vim src/hw_gtests.cpp
+```
+If you move into `src` before editing `main.cpp`, you must remember to move back up into `ICS46` before using the `git` commands. We recommend and give examples below of typing the subdirectory paths instead. 
 
-You should copy everything from the CMakeLists.txt and CMakePresets files into your own, as well as
-the files `gtestmain.cpp` and `hw_gtests.cpp`. This will allow you to build and run the tests for this
-assignment. If you do not follow this structure, you will not be able to use the `CMakeLists.txt`
-file as provided!
+*TIP: Use tab completion of directory and filenames to reduce typing.*
 
 ## Coding
 
-We will run the text editor `vim` (or `neovim` if you prefer) on the file `src/main.cpp`:
+We will now run the text editor `vim` (or `neovim` if you prefer) to modify the file `src/main.cpp`:
 
 ```bash
 # To use vim, type this command:
@@ -83,8 +55,7 @@ vim src/main.cpp
 nvim src/main.cpp
 ```
 
-Once you are in `vim`/`nvim`, you will enter `insert` mode by pressing `i`. Then type the following program
-and press `Esc` when you are done.
+Once you are in `vim`/`nvim`, enter `insert` mode by pressing `i`. Then type the following program, and press `Esc` when you are done.
 
 ```cpp
 #include <iostream>
@@ -95,48 +66,38 @@ int main() {
 }
 ```
 
-Ensure that you have left `insert` mode by pressing `Esc`, then `write` and `quit` `vim` by typing either
-`:wq` or `:x`. This should close `vim`/`nvim` with your changes made. Now, you can move on to
-[Build Instructions](#build_instructions)!
+Ensure that you have left `insert` mode by pressing `Esc`, then `write` and `quit` `vim` by typing either `:wq` or `:x` to close `vim`/`nvim` with your changes made. Now, you can move on to [Build Instructions](#build-instructions)!
 
 ## Build Instructions
 
-If you are not already in a terminal (or ssh with OpenLab) from the above instructions, you will need
-to open a terminal and move into your project folder as show below:
-
-```bash
-cd <YourProjectPath>    # So if we had the project in a folder named Projects: cd Projects/CS46-Template
-```
-
-Once you are in the project folder, use the following commands to build your project:
+When logged in to Openlab, and in your course directory (e.g., `ICS46`),  use the following commands to build your project:
 
 ```bash
 cmake --preset default  # Create a folder named `build` and run `CMake` to produce build files there
 cmake --build build     # Will build all of the `targets` described in the `CMake` file
 ```
 
-This will produce a folder named `build`, which will have two new executables you can run! First, we will
-run your code you just wrote:
+These commands will produce a folder named `build`, which will have two new executables you can run! 
+
+First, we will run your code you just wrote:
 
 ```bash
-./build/hw              # Runs the `main` function from src/main.cpp
+./build/hw    # Runs the `main` function from src/main.cpp
 ```
 
-This should output the following message to your terminal:
+This command should output the following message to your terminal:
 
 ```bash
 Hello World!
 ```
 
-Next, we will run `GTest`. This will run tests on your code and is also how we will be grading your assignments.
-If you are not on OpenLab or have not installed `GTest` on your computer you are testing on, then skip this step
-and move on to [Submission](#submission).
+Next, we will run `GTest`. This procedure will run tests on your code and is the same way we will grade your homework assignments.
 
 ```bash
-./build/hw_gtests      # Runs the tests you wrote in `gtest/hw_gtests.cpp`
+./build/hw_gtests    # Runs the tests in `gtest/hw_gtests.cpp`
 ```
 
-This should output:
+This command should output:
 
 ```bash
 [==========] Running 1 tests from 1 test suites.
@@ -151,41 +112,32 @@ This should output:
 [  PASSED  ] 1 tests.
 ```
 
-Congratulations! You are now ready to [submit](#submission) your homework!
+## Commit and push to your GitHub
 
-## Submission
-
-All submissions will be done through [Gradescope](https://www.gradescope.com/). Open the Gradescope page
-and select `HW0`. Now if you are using a `GitHub` account, follow the [GitHub Submission](#github-submission)
-instructions, otherwise follow the [File Submission](#file-submission) instructions.
-
-### GitHub Submission
-
-First, we need to make sure that we commit all of our changes we made! In a terminal inside your project folder,
-run the following command:
+Next, we need to make sure that we `commit` all of our changes we made! In your course directory on Openlab, run the following command:
 
 ```bash
 git commit -a -m "Submission commit of HW0."
 ```
 
-Now that we have committed out changes, we need to push them to `GitHub` so that `Gradescope` can see them.
+Now that we have committed our changes, we need to `push` them to `GitHub` so that `GradeScope` can upload them. Your Openlab repository should have two remotes: `origin` which represents the public GitHub repository at `RayKlefstad/ICS45c` and `my_repo` which represents your own private GitHub repository for your own code. To push to *your* GitHub repository, use the command:
 
 ```bash
-git push
+git push -u my_repo
 ```
 
-Now on Gradescope, press the submit button, choose the `GitHub` option, and select your project and branch
-as shown below:
+This command will set the default remote for this branch to `my_repo`. If you make any future changes and want to resubmit them, you can create another `commit` with `git commit -a -m "Fixed bug XZY"` followed by `git push`.
+
+Congratulations! You are now ready to [submit](#submission) your homework!
+
+## Submission
+
+All submissions are done on [GradeScope](https://www.gradescope.com/). 
+
+On GradeScope, go into your **Account Settings** and **link your GitHub account to GradeScope**.
+
+Then on the course GradeScope, go to the `Homework 0.2 Github` assignment, press the `Submit` button, choose the `GitHub` option,  and select your project and branch as shown below:
 
 ![](docs/submit_github.png)
 
 Now the autograder will run and give you a score!
-
-### File Submission
-
-On `Gradescope`, press the `submit` button and it will bring up the following window:
-
-![](docs/submit_files.png)
-
-Then you will drag and drop the `main.cpp` file from your `src` folder (or wherever you have made this
-file) and press upload. As this is the only file we are changing, it should be the only file that you upload!
