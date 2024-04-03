@@ -123,10 +123,10 @@ Testing your programs before submitting them is **essential** and will be **requ
 
 ## Next steps: hw0
 
-Next, at the upper left of this page, select the `hw0` branch, and follow the instructions in the README there.
+Next, at the upper left of your private GitHub Classroom repository, select the `hw0` branch, and follow the instructions in the README there.
 
 ![](docs/change_branch2.png)
 
-To access instructions and files for all **future** Homeworks, use that same branch drop down menu at the top of this page (the public ICS46 GitHub) to select the Homework you wish to work on, **but ONLY AFTER they are announced as available on Ed**. Then follow the instructions on the README for that homework branch.
+To access instructions and files for all **future** Homeworks, use that same branch drop down menu to select the Homework you wish to work on, **but ONLY AFTER they are announced as available on Ed**. Then follow the instructions on the README for that homework branch.
 
-**:warning: DO NOT checkout any Homework assignments from the GitHub `ICS46` repository until their availability is announced on Ed! You may obtain out-of-date files and instructions which will confuse you, waste time, and require more advanced and complex `git` operations to undo!**
+**:warning: DO NOT checkout any Homework assignments from the GitHub `ics46` repository until their availability is announced on Ed! You may obtain out-of-date files and instructions which will confuse you, waste time, and require more advanced and complex `git` operations to undo!**
