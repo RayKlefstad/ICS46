@@ -73,11 +73,11 @@ Now that you have created your SSH key on Openlab, add it to **your** `GitHub` a
 
 ## 3 Make your own private repository on GitHub Classroom
 
-Now that you have set up your `username`, `email`, and `ssh` key, navigate back to the Canvas page, and click the GitHub Classroom link. That link will automatically generate a private copy of this repository for you! (NOTE: It will ask you to authorize GitHub Classroom to have access to your GitHub account, and you should confirm this authorization). Once you have created that repository, you can continue on to the `Clone` instructions in Step 4. Go to the browser tab with your private ics46-YourName repository to continue with the instructions.
+Now that you have set up your `username`, `email`, and `ssh` key, navigate back to the Canvas page, and click the GitHub Classroom link. That link will automatically generate a private copy of this repository for you! (NOTE: It will ask you to authorize GitHub Classroom to have access to your GitHub account, and you should confirm this authorization). Once you have created that repository, you can continue on to the `Clone` instructions in Step 4. Go to the browser tab with your private `ics46-<yourgithubid>` repository to continue with the instructions.
 
 ## 4 Clone this repository
 
-Now that you have a private copy of this repository, [clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) your private `GitHub Classroom` ICS46 (`ics46-<githubid>`) repository to your Openlab. On Openlab, you can clone a GitHub repository by using the command `git clone` and copy-pasting the **SSH link** you get when clicking the green `Code` button. Example below:
+Now that you have a private copy of this repository, [clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) your private `GitHub Classroom` ICS46 (`ics46-<yourgithubid>`) repository to your Openlab. On Openlab, you can clone a GitHub repository by using the command `git clone` and copy-pasting the **SSH link** you get when clicking the green `Code` button. Example below:
 
 ![](docs/clone_link.png)
 
@@ -96,7 +96,7 @@ This `git clone ...` command initializes a new git repository on your Openlab an
 
 The `git clone` command also establishes the private course repository at `ICS46` as a `remote` connection called `origin`. `origin` is an alias (short nickname) for `git@github.com:klefstad-teaching/ics46-<StudentName>.git` so that you don't have to type that long connection path every time. You can then  `checkout` files from `origin`for all the future Homeworks (from the different branches named `hw0`, `hw1`...)---but **only after they are announced as available on Ed**!
 
-With this complete, you can switch to the `HW0` branch to start on homework 0.2!
+With these steps complete, after you read about the Tools below, you can switch to the `hw0` branch to start on Homework 0.2!
 
 ## Tools
 
@@ -125,8 +125,8 @@ Testing your programs before submitting them is **essential** and will be **requ
 
 Next, at the upper left of this page, select the `hw0` branch, and follow the instructions in the README there.
 
-![](docs/branches.png)
+![](docs/change_branch.png)
 
-To access instructions and files for all **future** Homeworks, use that same branch drop down menu at the top of this page (the public ICS46 GitHub) to select the Homework you wish to work on, **but ONLY AFTER they are announced as available on Ed**.Then follow the instructions on the README for that homework branch.
+To access instructions and files for all **future** Homeworks, use that same branch drop down menu at the top of this page (the public ICS46 GitHub) to select the Homework you wish to work on, **but ONLY AFTER they are announced as available on Ed**. Then follow the instructions on the README for that homework branch.
 
-**:warning: DO NOT checkout anything from the public GitHub `ICS46` repository until its availability is announced on Ed! You may obtain out-of-date files and instructions which will confuse you, waste time, and require more advanced and complex `git` operations to undo!**
+**:warning: DO NOT checkout any Homework assignments from the GitHub `ICS46` repository until their availability is announced on Ed! You may obtain out-of-date files and instructions which will confuse you, waste time, and require more advanced and complex `git` operations to undo!**
