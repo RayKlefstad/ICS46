@@ -6,9 +6,8 @@ While following these instructions here in this `main` branch README, you will c
 
  1. On GitHub, create an account.
  2. On Openlab and GitHub, set up SSH keys for communicating between your Openlab and GitHub accounts.
- 3. On Openlab, **clone** the public GitHub 46 course repository (`RayKlefstad/ICS46`) to your Openlab.
- 4. On GitHub, create your own private repository for this course on your own GitHub account.
- 5. On Openlab, set up your private GitHub repository as a second `remote` so that you can `push` your work to it.
+ 3. On GitHub Classroom, create your own private repository.
+ 4. On Openlab, **clone** your repository to your Openlab.
 
 ## 1 GitHub Account
 
@@ -70,55 +69,32 @@ Now that you have created your SSH key on Openlab, add it to **your** `GitHub` a
 - [ ] In the **Key** field, paste your public key.
 - [ ] Click  **Add SSH key**.
 
-## 3 Clone this repository
+## 3 Make your own private repository
 
-Now that you have set up your `username`, `email`, and `ssh` key, [clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) this public ICS46 repository to your Openlab. On Openlab, you can clone a GitHub repository by using the command `git clone` and copy-pasting the **SSH link** you get when clicking the green `Code` button. Example below:
+Now that you have set up your `username`, `email`, and `ssh` key, creating this repository is as simple as clicking the provided
+GitHub Classroom link! (If you are reading this page, you likely have already clicked this link, if not, get the link from class
+resources).
+
+## 4 Clone this repository
+
+Now that you have a private copy of the repository, [clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) this ICS46 repository to your Openlab. On Openlab, you can clone a GitHub repository by using the command `git clone` and copy-pasting the **SSH link** you get when clicking the green `Code` button. Example below:
 
 ![](docs/clone_link.png)
 
 So run the following command:
 
 ```bash
-git clone git@github.com:RayKlefstad/ICS46.git
+# This is an example ssh link, make sure to use your own!
+git clone <git@github.com:RayKlefstad/ICS46.git>
 ```
+
 At the prompt `Are you sure you want to continue connecting (yes/no/[fingerprint])?` type `yes`.
 
-This `git clone ...` command initializes a new git repository on your Openlab and populates it with the contents of the public `RayKlefstad/ICS46` repository, adding the directory `ICS46` to your current working directory, which you can see by typing the `ls` command.
+This `git clone ...` command initializes a new git repository on your Openlab and populates it with the contents of the private `ICS46` repository, adding the directory `ICS46` to your current working directory, which you can see by typing the `ls` command.
 
-The `git clone` command also establishes the public course repository at `RayKlefstad/ICS46` as a `remote` connection called `origin`. `origin` is an alias (short nickname) for `git@github.com:RayKlefstad/ICS46.git` so that you don't have to type that long connection path every time. You can then  `checkout` files from `origin`for all the future Homeworks (from the different branches named `hw0`, `hw1`...)---but **only after they are announced as available on Ed**!
+The `git clone` command also establishes the private course repository at `ICS46` as a `remote` connection called `origin`. `origin` is an alias (short nickname) for `git@github.com:<StudentName>/ICS46.git` so that you don't have to type that long connection path every time. You can then  `checkout` files from `origin`for all the future Homeworks (from the different branches named `hw0`, `hw1`...)---but **only after they are announced as available on Ed**!
 
-## 4 Make your own private repository
-
-Next, you need to be able to save your own work, but you **cannot save your own work in the public course repository**. Therefore, you need to create your own **private copy** of the public ICS46 repository, in your own GitHub account. 
-
-To create your private copy , be sure you are in your own GitHub account, then click on the `+` in the top right of the GitHub page, and select `New repository` as shown below:
-
-![](docs/new_repository.png)
-
-Give your GitHub repository a name such as `ICS46`, and **make sure you set the visibility to private**!
-
-⚠️ WARNING!
->  **Making your repository visibility public is a violation of academic integrity policy, allowing others to view and copy your code.** Be absolutely SURE at this stage that your repository visibility is private and remains so at all times---even after you are finished with the course and your university studies.
-
-## 5 Set up private `remote` and `push`
-
-Once created, set up your private GitHub repository as a second `remote` connection, so that you can `push` your work done on Openlab to it.  To do this, first copy the SSH clone link of your private repository from the green `Code` button just as you did earlier for the public course repository. Now go back to Openlab inside the directory `ICS46` and run this command with the copy-pasted link:
-
-```bash
-git remote add my_repo <git@YourSSHLinkHere>
-```
-
-:warning: **Make sure that this link starts with `git@` and not with `https://` or else it will not work!**
-
-The command above establishes a second `remote` connection to your private repository on GitHub, and creates an alias (short nickname) `my_repo` so that you don't have to type that long connection link every time.
-
-Your private repository should now be set up correctly! To verify that it works, you can use the command:
-
-```bash
-git push my_repo
-```
-
-This command pushes the current contents of your `ICS46` folder, including the text you are reading right now, to your private GitHub repository. If this command finishes with no errors, and your private GitHub repository is no longer empty, then everything works! After you finish reading the rest of this page, you can move on to `Homework 0.2`.
+With this complete, you can switch to the `HW0` branch to start on homework 0.2!
 
 ## Tools
 
