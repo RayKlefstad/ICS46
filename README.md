@@ -69,9 +69,9 @@ Now that you have created your SSH key on Openlab, add it to **your** `GitHub` a
 - [ ] In the **Key** field, paste your public key.
 - [ ] Click  **Add SSH key**.
 
-## 3 Make your own private repository
+## 3 Make your own private repository on GitHub Classroom
 
-Now that you have set up your `username`, `email`, and `ssh` key, navigate back to the Canvas page, and click the GitHub Classroom link. That link will automatically generate a private copy of this repository for you! (NOTE: It will ask you to authorize GitHub Classroom to have access toy our GitHub account, and you should confirm this authorization). Once you have created that repository, you can continue on to the `Clone` instructions below.
+Now that you have set up your `username`, `email`, and `ssh` key, navigate back to the Canvas page, and click the GitHub Classroom link. That link will automatically generate a private copy of this repository for you! (NOTE: It will ask you to authorize GitHub Classroom to have access to your GitHub account, and you should confirm this authorization). Once you have created that repository, you can continue on to the `Clone` instructions below.
 
 ## 4 Clone this repository
 
