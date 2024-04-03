@@ -16,9 +16,11 @@ GitHub is an online storage service for the tool `git`, an industry standard ver
 - save your work in your own account on GitHub.com (in different versions/branches if you choose, so that you can try different approaches or changes without breaking what you were working on before), and
 - easily upload your Homework submissions to GradeScope directly from GitHub.
 
-This class **requires** the use of a GitHub account, so first create your account at  [GitHub.com](https://github.com/). If you already have a GitHub account, you can use your existing account for this course. Your GitHub account does not need to be linked to your UCI email.
+This class **requires** the use of a GitHub account, so first create your account at  [GitHub.com](https://github.com/). If you already have a GitHub account, you can use your existing account for this course. Your GitHub account does not need to be linked to your UCI email. 
 
 ## 2 Configure your `git` profile and add SSH keys
+
+_Note:  If you have already set up SSH keys on Openlab for your GitHub account, for example in ICS 45C, skip Step 2 and go on to Step 3._
 
 On Openlab, `git` is pre-installed, so now we will set up your basic `git` profile and add your GitHub `ssh-keys` to your account! SSH keys allow secure communication between your Openlab and your GitHub accounts, without the need to log in every time.
 
@@ -71,7 +73,7 @@ Now that you have created your SSH key on Openlab, add it to **your** `GitHub` a
 
 ## 3 Make your own private repository on GitHub Classroom
 
-Now that you have set up your `username`, `email`, and `ssh` key, navigate back to the Canvas page, and click the GitHub Classroom link. That link will automatically generate a private copy of this repository for you! (NOTE: It will ask you to authorize GitHub Classroom to have access to your GitHub account, and you should confirm this authorization). Once you have created that repository, you can continue on to the `Clone` instructions below.
+Now that you have set up your `username`, `email`, and `ssh` key, navigate back to the Canvas page, and click the GitHub Classroom link. That link will automatically generate a private copy of this repository for you! (NOTE: It will ask you to authorize GitHub Classroom to have access to your GitHub account, and you should confirm this authorization). Once you have created that repository, you can continue on to the `Clone` instructions in Step 4. Go to the browser tab with your private ics46-YourName repository to continue with the instructions.
 
 ## 4 Clone this repository
 
