@@ -121,15 +121,12 @@ git commit -a -m "Submission commit of HW0."
 ```
 
 Now that we have committed out changes, we need to push them to `GitHub` so that `Gradescope` can see them.
-:warning: **NOTE: If you followed the instructions under the main branch and still have two remotes (as opposed
-to deleting this folder and then recloning), you will need to specify which branch to push to, or set up
-which remote you wish to track.**
 
 ```bash
 git push
 ```
 
-This command will set the default remote for this branch to `my_repo`. If you make any future changes and want to resubmit them, you can create another `commit` with `git commit -a -m "Fixed bug XZY"` followed by `git push`.
+If you make any future changes and want to resubmit them, you can create another `commit` with `git commit -a -m "Fixed bug XZY"` followed by `git push`.
 
 Congratulations! You are now ready to [submit](#submission) your homework!
 
