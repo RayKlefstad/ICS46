@@ -75,7 +75,7 @@ Now that you have set up your `username`, `email`, and `ssh` key, navigate back 
 
 ## 4 Clone this repository
 
-Now that you have a private copy of the repository, [clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) this ICS46 repository to your Openlab. On Openlab, you can clone a GitHub repository by using the command `git clone` and copy-pasting the **SSH link** you get when clicking the green `Code` button. Example below:
+Now that you have a private copy of this repository, [clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) your private `GitHub Classroom` ICS46 (`ics46-<githubid>`) repository to your Openlab. On Openlab, you can clone a GitHub repository by using the command `git clone` and copy-pasting the **SSH link** you get when clicking the green `Code` button. Example below:
 
 ![](docs/clone_link.png)
 
@@ -90,7 +90,7 @@ git clone git@github.com:klefstad-teaching/ics46-<StudentName>.git ICS46
 
 At the prompt `Are you sure you want to continue connecting (yes/no/[fingerprint])?` type `yes`.
 
-This `git clone ...` command initializes a new git repository on your Openlab and populates it with the contents of the private `ICS46` repository, adding the directory `ICS46` to your current working directory, which you can see by typing the `ls` command.
+This `git clone ...` command initializes a new git repository on your Openlab and populates it with the contents of the private `ICS46` repository from GitHub Classroom, adding the directory `ICS46` to your current working directory, which you can see by typing the `ls` command.
 
 The `git clone` command also establishes the private course repository at `ICS46` as a `remote` connection called `origin`. `origin` is an alias (short nickname) for `git@github.com:klefstad-teaching/ics46-<StudentName>.git` so that you don't have to type that long connection path every time. You can then  `checkout` files from `origin`for all the future Homeworks (from the different branches named `hw0`, `hw1`...)---but **only after they are announced as available on Ed**!
 
