@@ -126,16 +126,7 @@ to deleting this folder and then recloning), you will need to specify which bran
 which remote you wish to track.**
 
 ```bash
-# If you only have 1 upstream remote:
 git push
-
-# If your personal repository was named similar to main instructions:
-git push my_repo
-
-# To push and set remote to personal repo for all future pushes:
-# (After using this once, you can use git push for all future
-# pushes on branch hw0).
-git push -u my_repo hw0
 ```
 
 This command will set the default remote for this branch to `my_repo`. If you make any future changes and want to resubmit them, you can create another `commit` with `git commit -a -m "Fixed bug XZY"` followed by `git push`.
