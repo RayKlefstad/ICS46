@@ -14,8 +14,8 @@ To get started with this Homework 0.2, be sure that you have followed all of the
 Now, log in to Openlab, and move into the directory you created for this course:
 
 ```bash
-# Move into the course directory, i.e., your ics46-<yourgithubid> directory on Openlab
-cd ics46-<yourgithubid>
+# Move into the course directory, i.e., your ICS46 directory on Openlab
+cd ICS46
 
 # Change to the current homework branch:
 git checkout hw0
