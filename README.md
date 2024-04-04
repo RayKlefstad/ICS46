@@ -2,6 +2,8 @@
 
 Welcome to the ICS 46 GitHub landing page! This GitHub repository contains the homework setup material you need for this course. This `main` branch helps you set up the GitHub connections you need, and introduces the tools we use in this course.
 
+_Note: If you have already done a similar Homework 0.2 in ICS 45C, read carefully, because some instructions have changed!_
+
 While following these instructions here in this `main` branch README, you will complete the following steps:
 
  1. On GitHub, create an account.
